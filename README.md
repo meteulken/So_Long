@@ -15,6 +15,9 @@ MinilibX, C programlama dili için bir grafik kütüphanesidir. MinilibX, X Wind
 <a href="#9">mlx_string_put()</a><br>
 
 
+<h2 id="0"> Keycode Tablosu </h2>
+<img src="https://eastmanreference.com/img/complete-list-of-applescript-key-codes-t.png" alt="Keycode">
+
 <h2 id="1">"mlx_init()" fonksiyonu </h2> 
 
 * MinilibX kütüphanesini başlatmak için kullanılan bir fonksiyondur ve grafik işlemleri yapmak isteyen bir programcı tarafından çağrılmalıdır.
