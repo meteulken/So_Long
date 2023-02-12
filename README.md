@@ -1,4 +1,4 @@
-# So_Long
+# So_Long...
 Minilibx Kütüphanesi 2D Oyun Yapımı
 
 MinilibX, C programlama dili için bir grafik kütüphanesidir. MinilibX, X Window System (X11) üzerinde çalışır ve X11 veri yapılarını kullanarak grafik işlemleri yapar.
