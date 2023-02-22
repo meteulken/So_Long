@@ -15,11 +15,11 @@
 void	eventsuccess(t_game *game)
 {
 	game->intra_str = "mulken";
-	printf("\n\n------------------------\n\n");
-	printf(MAGENTA" THANK YOU FOR PLAYING \n\n"RESET);
-	printf(YELLOW"    INTRA: %s \n"RESET, game->intra_str);
-	printf(" Press [Q] to exit \n\n");
-	printf("------------------------\n");
+	ft_printf("\n\n------------------------\n\n");
+	ft_printf(MAGENTA" THANK YOU FOR PLAYING \n\n"RESET);
+	ft_printf(YELLOW"    INTRA: %s \n"RESET, game->intra_str);
+	ft_printf(" Press [Q] to exit \n\n");
+	ft_printf("------------------------\n");
 }
 
 void	free_map(char **map)
