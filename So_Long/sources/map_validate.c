@@ -23,7 +23,7 @@ static int	is_retangular(char **map)
 	{
 		if (ft_strlen(map[x]) != ft_strlen(map[0]))
 			return (0);
-		i++;
+		x++;
 	}
 	int	i;
 	int	j;
