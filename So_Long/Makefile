@@ -4,6 +4,9 @@ LIBFT			=	$(LIBFT_PATH)/libft.a
 MINILIBX_PATH	=	./libraries/minilibx
 MINILIBX		=	$(MINILIBX_PATH)/libmlx.a
 
+PRINTF_PATH		=	./libraries/ft_printf
+PRINTF			=	$(PRINTF_PATH)/libftprintf.a
+
 SOURCES_FILES	=	so_long.c \
 					draw.c \
 					init.c \
@@ -34,8 +37,8 @@ MLXFLAGS		=	-framework AppKit -framework OpenGL -L./libraries/minilibx -lmlx
 
 all:			$(NAME)
 
-$(NAME):		$(LIBFT) $(MINILIBX) $(OBJECTS) $(HEADER)
-				$(CC) $(CFLAGS) $(OBJECTS) $(LIBFT) $(MINILIBX) $(MLXFLAGS) -o $(NAME)
+$(NAME):		$(LIBFT) $(MINILIBX) $(PRINTF) $(OBJECTS) $(HEADER)
+				$(CC) $(CFLAGS) $(OBJECTS) $(LIBFT) $(PRINTF) $(MINILIBX) $(MLXFLAGS) -o $(NAME)
 
 $(LIBFT):
 				$(MAKE) -C $(LIBFT_PATH)
@@ -43,13 +46,18 @@ $(LIBFT):
 $(MINILIBX):
 				$(MAKE) -C $(MINILIBX_PATH)
 
+$(PRINTF):
+				$(MAKE) -C $(PRINTF_PATH)
+
 clean:
 				$(MAKE) -C $(LIBFT_PATH) clean
+				$(MAKE) -C $(PRINTF_PATH) clean
 				$(MAKE) -C $(MINILIBX_PATH) clean
 				$(RM) $(OBJECTS)
 
 fclean:			clean
 				$(MAKE) -C $(LIBFT_PATH) fclean
+				$(MAKE) -C $(PRINTF_PATH) fclean
 				$(RM) $(NAME)
 
 re:				fclean all
