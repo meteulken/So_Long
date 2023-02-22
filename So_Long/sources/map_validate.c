@@ -14,16 +14,32 @@
 
 static int	is_retangular(char **map)
 {
-	int	i;
+	int	x;
 
-	i = 1;
+	x = 1;
 	if (!map)
 		return (0);
-	while (map[i] != NULL)
+	while (map[x] != NULL)
 	{
-		if (ft_strlen(map[i]) != ft_strlen(map[0]))
+		if (ft_strlen(map[x]) != ft_strlen(map[0]))
 			return (0);
 		i++;
+	}
+	int	i;
+	int	j;
+
+	j = 0;
+	i = 0;
+	while (map[j])
+		j++;
+	j--;
+	while (map[0][i] != '\n' && map[0][i])
+		i++;
+	i--;
+	if (i < 2 || i == j)
+	{
+		printf ("Map Shape Error\n");
+		exit (1);
 	}
 	return (1);
 }
