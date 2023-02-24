@@ -15,7 +15,8 @@
 static int	is_retangular(char **map)
 {
 	int	x;
-
+	int i;
+	
 	x = 1;
 	if (!map)
 		return (0);
@@ -25,6 +26,20 @@ static int	is_retangular(char **map)
 			return (0);
 		x++;
 	}
+	i = 0;
+	while (map[0][i] != '\n' && map[0][i])
+	{
+		if (i == x)
+			return (1);
+		i++;
+	}
+	ft_printf ("Map Shape Error\n");
+	exit (1);
+}
+
+/*
+static int	is_shape(char **map)
+{
 	int	i;
 	int	j;
 
@@ -43,6 +58,7 @@ static int	is_retangular(char **map)
 	}
 	return (1);
 }
+*/
 
 static int	is_wall(char **map)
 {
