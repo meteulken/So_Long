@@ -15,6 +15,7 @@
 
 # include "../libraries/minilibx/mlx.h"
 # include "../libraries/libft/libft.h"
+# include "../libraries/ft_printf/ft_printf.h"
 # include <stdio.h>
 # include <fcntl.h>
 
