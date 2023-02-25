@@ -34,7 +34,7 @@ static int	is_retangular(char **map)
 		ft_printf ("Map Shape Error\n");
 		exit (1);
 	}
-	return (1);	
+	return (1);
 }
 
 static int	is_wall(char **map)
