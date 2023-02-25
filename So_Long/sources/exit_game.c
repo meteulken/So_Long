@@ -15,23 +15,17 @@
 void	eventsuccess(t_game *game)
 {
 	game->intra_str = "mulken";
-    ft_printf("\033[1;35m\n");
-    ft_printf(" ____________________________ \n");
-    ft_printf("|                            | \n");
-    ft_printf("|       THANK YOU FOR        |\n");
-    ft_printf("|           PLAYING          |\n");
-    ft_printf("|        THIS AWESOME        |\n");
-    ft_printf("|            GAME!           |\n");
-    ft_printf("|     INTRA: \033[1;33m%s\033[1;35m          |\n",game->intra_str);
-    ft_printf("|                            |\n");
-    ft_printf("|     Press \033[1;33m[Q]\033[1;35m to exit      |\n");
-    ft_printf("|____________________________| \n\n");
-	/*game->intra_str = "mulken";
-	ft_printf("\n\n------------------------\n\n");
-	ft_printf(MAGENTA" THANK YOU FOR PLAYING \n\n"RESET);
-	ft_printf(YELLOW"    INTRA: %s \n"RESET, game->intra_str);
-	ft_printf(" Press [Q] to exit \n\n");
-	ft_printf("------------------------\n");*/
+	ft_printf("\033[1;35m\n");
+	ft_printf(" ____________________________ \n");
+	ft_printf("|                            | \n");
+	ft_printf("|       THANK YOU FOR        |\n");
+	ft_printf("|           PLAYING          |\n");
+	ft_printf("|        THIS AWESOME        |\n");
+	ft_printf("|            GAME!           |\n");
+	ft_printf("|     INTRA: \033[1;33m%s\033[1;35m          |\n",game->intra_str);
+	ft_printf("|                            |\n");
+	ft_printf("|     Press \033[1;33m[Q]\033[1;35m to exit      |\n");
+	ft_printf("|____________________________|\e[0m \n\n");
 }
 
 void	free_map(char **map)
