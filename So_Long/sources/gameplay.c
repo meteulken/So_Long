@@ -32,7 +32,7 @@ void	draw_collect_count(t_game *game)
 	collect_str = "Collect Count: ";
 	str = ft_itoa(game->n_collect);
 	str = ft_strjoin(collect_str, str);
-	mlx_string_put(game->mlx, game->win, 40, 40, 0x000000, str);
+	mlx_string_put(game->mlx, game->win, 20, 40, 0x000000, str);
 	free(str);
 }
 
