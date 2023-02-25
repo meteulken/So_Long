@@ -8,7 +8,7 @@ PRINTF_PATH		=	./libraries/ft_printf
 PRINTF			=	$(PRINTF_PATH)/libftprintf.a
 
 X = "\033[34m"
-
+R = "\e[0m"
 SOURCES_FILES	=	so_long.c \
 					draw.c \
 					init.c \
@@ -53,7 +53,7 @@ $(PRINTF):
 
 norm:				$(SOURCES)
 				norminette $(SOURCES) $(HEADER)
-				@echo $(X)[--NORMINETTE SUCCES %100--]$(X)
+				@echo $(X)[--NORMINETTE SUCCES %100--]$(R)
 
 clean:
 				$(MAKE) -C $(LIBFT_PATH) clean
