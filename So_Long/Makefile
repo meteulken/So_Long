@@ -8,7 +8,7 @@ PRINTF_PATH		=	./libraries/ft_printf
 PRINTF			=	$(PRINTF_PATH)/libftprintf.a
 
 X = "\033[34m"
-R = "\e[0m"
+R = "\033[0m"
 
 SOURCES_FILES	=	so_long.c \
 					draw.c \
