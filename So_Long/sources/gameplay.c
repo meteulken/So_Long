@@ -77,5 +77,4 @@ void	gameplay(t_game *game)
 {
 	mlx_hook(game->win, 2, 0, keypress, game);
 	mlx_hook(game->win, 17, 0, exit_game, game);
-	mlx_hook(game->win, 12, 0, map_draw, game);
 }
