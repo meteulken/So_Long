@@ -14,14 +14,14 @@
 
 void	eventsuccess(t_game *game)
 {
-	char *intra_str = "mulken";
+	game->intra_str = "mulken";
     ft_printf("\033[1;31m");
     ft_printf(" ┏━━━━━━━━━━━━━━━━━━━━━━━━━┓\n");
     ft_printf(" ┃\033[1;35m       THANK YOU FOR       \033[1;31m┃\n");
     ft_printf(" ┃\033[1;35m           PLAYING        \033[1;31m┃\n");
     ft_printf(" ┃\033[1;35m        THIS AWESOME      \033[1;31m┃\n");
     ft_printf(" ┃\033[1;35m            GAME!         \033[1;31m┃\n");
-    ft_printf(" ┃\033[1;35m     INTRA: \033[1;33m%-10s\033[1;35m   \033[1;31m┃\n", intra_str);
+    ft_printf(" ┃\033[1;35m     INTRA: \033[1;33m%-10s\033[1;35m   \033[1;31m┃\n", game->intra_str);
     ft_printf(" ┃                         ┃\n");
     ft_printf(" ┃\033[1;35m      Press \033[1;33m[Q]\033[1;35m to exit     \033[1;31m┃\n");
     ft_printf(" ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛\n\n");
