@@ -20,7 +20,7 @@ static void	player_update_image(char key, t_game *game)
 			(game->mlx, "images/player_back.xpm", &game->img_w, &game->img_h);
 	else if (key == 's')
 		game->img_player = mlx_xpm_file_to_image
-			(game->mlx, "images/player_right.xpm", &game->img_w, &game->img_h);
+			(game->mlx, "images/player_front.xpm", &game->img_w, &game->img_h);
 	else if (key == 'd')
 		game->img_player = mlx_xpm_file_to_image
 			(game->mlx, "images/player_right.xpm", &game->img_w, &game->img_h);
