@@ -53,14 +53,6 @@ typedef struct s_game
 # define KEY_D 2
 
 # define COLOR_SILVER	0x000000
-# define RED		"\x1b[31m"
-# define GREEN		"\x1b[32m"
-# define BLUE		"\x1b[34m"
-# define YELLOW		"\x1b[33m"
-# define MAGENTA	"\x1b[35m"
-# define CYAN		"\x1b[36m"
-
-# define RESET		"\x1b[0m"
 
 void	img_draw(t_game *game, void *image, int x, int y);
 int		map_draw(t_game *game);
