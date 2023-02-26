@@ -22,9 +22,7 @@ void	eventsuccess(t_game *game)
 	ft_printf("|           PLAYING          |\n");
 	ft_printf("|        THIS AWESOME        |\n");
 	ft_printf("|            GAME!           |\n");
-	ft_printf("|     INTRA: \033[1;33m%s\033[1;35m          |\n", game->intra_str);
-	ft_printf("|                            |\n");
-	ft_printf("|     Press \033[1;33m[Q]\033[1;35m to exit      |\n");
+	ft_printf("|       INTRA: \033[1;33m%s\033[1;35m        |\n", game->intra_str);
 	ft_printf("|____________________________|\e[0m \n\n");
 }
 
