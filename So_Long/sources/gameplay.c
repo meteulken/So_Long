@@ -14,26 +14,30 @@
 
 void	draw_step_count(t_game *game)
 {
-	char	*str;
-	char	*step_str;
+	char *str;
+	char *step_str;
+	char *new_str;
 
 	step_str = "Step Count: ";
 	str = ft_itoa(game->moves);
-	str = ft_strjoin(step_str, str);
-	mlx_string_put(game->mlx, game->win, 20, 20, 0x000000, str);
+	new_str = ft_strjoin(step_str, str);
+	mlx_string_put(game->mlx, game->win, 20, 20, 0x000000, new_str);
 	free(str);
+	free(new_str);
 }
 
 void	draw_collect_count(t_game *game)
 {
 	char	*str;
 	char	*collect_str;
+	char	*new_str;
 
 	collect_str = "Collect Count: ";
 	str = ft_itoa(game->n_collect);
-	str = ft_strjoin(collect_str, str);
-	mlx_string_put(game->mlx, game->win, 20, 40, 0x000000, str);
+	new_str = ft_strjoin(collect_str, str);
+	mlx_string_put(game->mlx, game->win, 20, 40, 0x000000, new_str);
 	free(str);
+	free(new_str);
 }
 
 static void	game_events(int keycode, t_game *game)
