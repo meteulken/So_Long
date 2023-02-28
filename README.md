@@ -1,6 +1,19 @@
 # So_Long...
 Minilibx Kütüphanesi 2D Oyun Yapımı
 
+
+
+<h2 id="0"> So Long </h2>
+<img src="https://github.com/meteulken/So_Long/blob/main/so_long.gif" alt="Keycode">
+
+# How To Play This Game
+
+To play this game, copy the URL below into iTerm/Terminal:
+
+```
+git clone https://github.com/meteulken/So_Long && cd So_Long && make && ./so_long maps/map.ber
+```
+
 MinilibX, C programlama dili için bir grafik kütüphanesidir. MinilibX, X Window System (X11) üzerinde çalışır ve X11 veri yapılarını kullanarak grafik işlemleri yapar.
 
 <h2 id="yazi-basligi">Prototipler</h2>
@@ -14,9 +27,6 @@ MinilibX, C programlama dili için bir grafik kütüphanesidir. MinilibX, X Wind
 <a href="#8">mlx_put_image_to_window()</a><br>
 <a href="#9">mlx_string_put()</a><br>
 
-
-<h2 id="0"> Keycode Tablosu </h2>
-<img src="https://github.com/meteulken/So_Long/blob/main/so_long.gif" alt="Keycode">
 
 <h2 id="1">"mlx_init()" fonksiyonu </h2> 
 
