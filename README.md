@@ -13,6 +13,15 @@ To play this game, copy the URL below into iTerm/Terminal:
 ```
 git clone https://github.com/meteulken/So_Long && cd So_Long && make && ./so_long maps/map.ber
 ```
+## Makefile rules
+
+| Rule         |                 Description                             |
+|:------------:|:-------------------------------------------------------:|
+| `make`       | Compile the program.                                    |
+| `make norm`  | Compile the norminette program                          |
+| `make clean` | Remove every objects of compilation                     |
+| `make fclean`| Do `clean` rule and remove the executable program       |
+| `make re`    | Do `fclean` rule and compile the program                |
 
 MinilibX, C programlama dili için bir grafik kütüphanesidir. MinilibX, X Window System (X11) üzerinde çalışır ve X11 veri yapılarını kullanarak grafik işlemleri yapar.
 
