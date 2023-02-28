@@ -1,9 +1,4 @@
-# So_Long...
-Minilibx Kütüphanesi 2D Oyun Yapımı
-
-
-
-<h2 id="0"> So Long </h2>
+# So_Long
 <img src="https://github.com/meteulken/So_Long/blob/main/so_long.gif" alt="Keycode">
 
 # How To Play This Game
