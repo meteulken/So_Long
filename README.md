@@ -13,7 +13,7 @@ git clone https://github.com/meteulken/So_Long && cd So_Long && make && ./so_lon
 | Rule         |                 Description                             |
 |:------------:|:-------------------------------------------------------:|
 | `make`       | Compile the program.                                    |
-| `make norm`  | Compile the norminette program                          |
+| `make norm`  | Norminette the program                                  |
 | `make clean` | Remove every objects of compilation                     |
 | `make fclean`| Do `clean` rule and remove the executable program       |
 | `make re`    | Do `fclean` rule and compile the program                |
