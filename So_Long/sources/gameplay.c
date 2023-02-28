@@ -14,9 +14,9 @@
 
 void	draw_step_count(t_game *game)
 {
-	char *str;
-	char *step_str;
-	char *new_str;
+	char	*str;
+	char	*step_str;
+	char	*new_str;
 
 	step_str = "Step Count: ";
 	str = ft_itoa(game->moves);
